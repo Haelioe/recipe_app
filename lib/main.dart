@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipeapp/screens/boot_screen.dart';
+import 'package:recipeapp/screens/home_screen.dart';
 import 'package:recipeapp/screens/profile_screen.dart';
 
 void main() {
