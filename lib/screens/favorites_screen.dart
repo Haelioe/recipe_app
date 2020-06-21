@@ -19,7 +19,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
             SizedBox(height: 20.0),
             Container(
               width: 300.0,
-              height: 557.0,
+              height: 637.0,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
