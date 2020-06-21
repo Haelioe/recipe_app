@@ -19,10 +19,11 @@ class _RecentsScreenState extends State<RecentsScreen> {
         children: <Widget>[
           Column(
             children: [
-              SizedBox(height: 20.0),
+              SizedBox(height: 30.0),
+              Text('Recents', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
               Container(
                 width: 300.0,
-                height: MediaQuery.of(context).size.height - 100,
+                height: MediaQuery.of(context).size.height - 133,
                 child: ListView(
                   scrollDirection: Axis.vertical,
                   children: [
