@@ -1,44 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:recipeapp/screens/favorites_screen.dart';
-import 'package:recipeapp/screens/home_screen.dart';
+import 'package:recipeapp/screens/profile_screen.dart';
 
-class ProfileScreen extends StatefulWidget {
+import 'favorites_screen.dart';
+import 'home_screen.dart';
+
+class RecentsScreen extends StatefulWidget {
   @override
-  _ProfileScreenState createState() => _ProfileScreenState();
+  _RecentsScreenState createState() => _RecentsScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _RecentsScreenState extends State<RecentsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-        color: Colors.amber[25],
-        child: ListView(
-          scrollDirection: Axis.vertical,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 50),
-              child: Container(
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                  color: Colors.black54,
-                  shape: BoxShape.circle,
-                ),
-                  child: Icon(
-                    Icons.person,
-                    size: 75,
-                    color: Colors.black87,
-                  ),
-              ),
+      body: Stack(
+        alignment: Alignment.topLeft,
+        children: <Widget>[
+          Container(
+            child: IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    new MaterialPageRoute(builder: (_) => ProfileScreen()));
+              },
+              icon: Icon(Icons.arrow_back),
+              color: Colors.blueGrey,
             ),
-            SizedBox(height: 10),
-            Text('Username', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 30)
-
-          ],
-        ),
+          )
+        ],
       ),
       bottomNavigationBar: Row(
         children: <Widget>[
@@ -78,16 +67,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
           ),
-          Container(
-            height: 60,
-            width: MediaQuery.of(context).size.width / 3,
-            decoration: BoxDecoration(
-              color: Colors.blue[100],
-            ),
-            child: Icon(
-              Icons.person,
-              color: Colors.blue[800],
-              size: 40,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  new MaterialPageRoute(builder: (_) => ProfileScreen()));
+            },
+            child: Container(
+              height: 60,
+              width: MediaQuery.of(context).size.width / 3,
+              decoration: BoxDecoration(
+                color: Colors.blue[100],
+              ),
+              child: Icon(
+                Icons.person,
+                color: Colors.blue[800],
+                size: 40,
+              ),
             ),
           ),
         ],

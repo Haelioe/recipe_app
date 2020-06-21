@@ -28,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Icon(
                 Icons.home,
                 color: Colors.blue[800],
+                size: 40,
               ),
             ),
           GestureDetector(
@@ -44,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Icon(
                 Icons.star,
                 color: Colors.blue[300],
+                size: 40,
               ),
             ),
           ),
@@ -61,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Icon(
                 Icons.person,
                 color: Colors.blue[300],
+                size: 40,
               ),
             ),
           ),
