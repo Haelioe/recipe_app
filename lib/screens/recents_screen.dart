@@ -17,16 +17,125 @@ class _RecentsScreenState extends State<RecentsScreen> {
       body: Stack(
         alignment: Alignment.topLeft,
         children: <Widget>[
-          Container(
-            child: IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    new MaterialPageRoute(builder: (_) => ProfileScreen()));
-              },
-              icon: Icon(Icons.arrow_back),
-              color: Colors.blueGrey,
+          Column(
+            children: [
+              SizedBox(height: 20.0),
+              Container(
+                width: 300.0,
+                height: MediaQuery.of(context).size.height - 100,
+                child: ListView(
+                  scrollDirection: Axis.vertical,
+                  children: [
+
+                    Container(
+
+                      child: Text('Chicken Stroganoff'),
+
+
+                    ),
+                    Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/chicken.jpg', fit: BoxFit.cover,),
+
+
+                    ),
+
+
+                    SizedBox(height: 40.0),
+
+                    Container(
+
+                      child: Text('Chicken Parmesan Cutlets'),
+
+
+                    ),
+                    Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/cutlet.jpg', fit: BoxFit.cover,),
+
+
+                    ),
+
+
+                    SizedBox(height: 40.0),
+
+                    Container(
+
+                      child: Text('Balsamic Glazed Chicken'),
+
+
+                    ),
+                    Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/glazed.jpg', fit: BoxFit.cover,),
+
+
+                    ),
+
+
+                    SizedBox(height: 40.0),
+
+                    Container(
+
+                      child: Text('Honey Garlic Chicken'),
+
+
+                    ),
+                    Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/honey.jpg', fit: BoxFit.cover,),
+
+
+                    ),
+
+
+                    SizedBox(height: 40.0),
+
+
+
+                  ],
+                ),
+              ),
+              SizedBox(height: 20.0),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 15),
+            child: Container(
+              child: IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      new MaterialPageRoute(builder: (_) => ProfileScreen()));
+                },
+                icon: Icon(Icons.arrow_back),
+                color: Colors.blueGrey,
+              ),
             ),
-          )
+          ),
         ],
       ),
       bottomNavigationBar: Row(

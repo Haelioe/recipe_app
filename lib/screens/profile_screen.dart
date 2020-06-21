@@ -1,6 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:recipeapp/screens/favorites_screen.dart';
 import 'package:recipeapp/screens/home_screen.dart';
+import 'package:recipeapp/screens/recents_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
@@ -26,17 +28,82 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   color: Colors.black54,
                   shape: BoxShape.circle,
                 ),
-                  child: Icon(
-                    Icons.person,
-                    size: 75,
-                    color: Colors.black87,
-                  ),
+                child: Icon(
+                  Icons.person,
+                  size: 75,
+                  color: Colors.black87,
+                ),
               ),
             ),
             SizedBox(height: 10),
-            Text('Username', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(height: 30)
-
+            Text(
+              'Username',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 30),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    new MaterialPageRoute(builder: (_) => RecentsScreen()));
+              },
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                    color: Colors.blue[100],
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(30),
+                        topLeft: Radius.circular(30))),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: Text(
+                    'Recent',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 1,
+              color: Colors.grey[800],
+            ),
+            Container(
+              height: 40,
+              color: Colors.blue[100],
+              child: Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Text(
+                  'Settings',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            Container(
+              height: 1,
+              color: Colors.grey[800],
+            ),
+            Container(
+              height: 40,
+              color: Colors.blue[100],
+              child: Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Text(
+                  'Account',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            Container(
+              height: 1,
+              color: Colors.grey[800],
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height,
+              color: Colors.blue[100],
+            ),
           ],
         ),
       ),
