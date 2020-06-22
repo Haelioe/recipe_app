@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:recipeapp/screens/balsamic_chicken_screen.dart';
+import 'package:recipeapp/screens/chicken_cutlet_screen.dart';
+import 'package:recipeapp/screens/honey_chicken_screen.dart';
 import 'package:recipeapp/screens/profile_screen.dart';
 
 import 'chicken_strog_screen.dart';
@@ -72,67 +75,108 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
 
                   SizedBox(height: 40.0),
 
-                  Container(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => ChickenCutlet()));
+                    },
+                    child: Container(
 
-                    child: Text('2) Chicken Parmesan Cutlets'),
+                      child: Text('2) Chicken Parmesan Cutlets'),
 
 
-                  ),
-                  Container(
-
-                    height: 200.0,
-                    width:300.0,
-                    margin: EdgeInsets.symmetric(vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30.0),
                     ),
-                    child: Image.asset('assets/cutlet.jpg', fit: BoxFit.cover,),
+                  ),
+                  GestureDetector(
+
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => ChickenCutlet()));
+                    },
+                    child: Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/cutlet.jpg', fit: BoxFit.cover,),
 
 
+                    ),
                   ),
 
 
                   SizedBox(height: 40.0),
 
-                  Container(
+                  GestureDetector(
 
-                    child: Text('3) Balsamic Glazed Chicken'),
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => BalsamicChicken()));
+                    },
+                    child: Container(
+
+                      child: Text('3) Balsamic Glazed Chicken'),
 
 
-                  ),
-                  Container(
-
-                    height: 200.0,
-                    width:300.0,
-                    margin: EdgeInsets.symmetric(vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30.0),
                     ),
-                    child: Image.asset('assets/glazed.jpg', fit: BoxFit.cover,),
+                  ),
+
+                  GestureDetector(
+
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => BalsamicChicken()));
+                    },
+                    child: Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/glazed.jpg', fit: BoxFit.cover,),
 
 
+                    ),
                   ),
 
 
                   SizedBox(height: 40.0),
 
-                  Container(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => HoneyChicken()));
+                    },
+                    child: Container(
 
-                    child: Text('4) Honey Garlic Chicken'),
+                      child: Text('4) Honey Garlic Chicken'),
 
 
-                  ),
-                  Container(
-
-                    height: 200.0,
-                    width:300.0,
-                    margin: EdgeInsets.symmetric(vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30.0),
                     ),
-                    child: Image.asset('assets/honey.jpg', fit: BoxFit.cover,),
+                  ),
+                  GestureDetector(
+
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => HoneyChicken()));
+                    },
+                    child: Container(
+
+                      height: 200.0,
+                      width:300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset('assets/honey.jpg', fit: BoxFit.cover,),
 
 
+                    ),
                   ),
 
 
