@@ -13,6 +13,12 @@ class _RecentsScreenState extends State<RecentsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(title:Text("Recents"),
+        automaticallyImplyLeading: false,
+
+      ),
+
       backgroundColor: Colors.white,
       body: Stack(
         alignment: Alignment.topLeft,
@@ -23,7 +29,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
               Text('Recents', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
               Container(
                 width: 300.0,
-                height: MediaQuery.of(context).size.height - 133,
+                height: MediaQuery.of(context).size.height - 213,
                 child: ListView(
                   scrollDirection: Axis.vertical,
                   children: [

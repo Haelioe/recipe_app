@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipeapp/screens/profile_screen.dart';
 
+import 'chicken_strog_screen.dart';
 import 'home_screen.dart';
 
 class FavoritesScreen extends StatefulWidget {
@@ -12,25 +13,49 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      appBar: AppBar(title:Text("Favorites"),
+        automaticallyImplyLeading: false,
+
+      ),
+
+
       backgroundColor: Colors.white,
+
       body: Center(
         child: Column(
           children: [
             SizedBox(height: 20.0),
             Container(
               width: 300.0,
-              height: 637.0,
+              height: 557.0,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
 
-                  Container(
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => ChickenStrogScreen()));
+                    },
+
+                  child: Container(
+
+
 
                     child: Text('1) Chicken Stroganoff'),
 
 
+
                   ),
-                  Container(
+                  ),
+
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          new MaterialPageRoute(builder: (_) => ChickenStrogScreen()));
+                    },
+                  child: Container(
 
                     height: 200.0,
                     width:300.0,
@@ -41,6 +66,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                     child: Image.asset('assets/chicken.jpg', fit: BoxFit.cover,),
 
 
+                  ),
                   ),
 
 
