@@ -25,8 +25,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
         children: <Widget>[
           Column(
             children: [
-              SizedBox(height: 30.0),
-              Text('Recents', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
+              SizedBox(height: 40.0),
               Container(
                 width: 300.0,
                 height: MediaQuery.of(context).size.height - 213,
@@ -130,9 +129,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
               SizedBox(height: 20.0),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 15),
-            child: Container(
+            Container(
               child: IconButton(
                 onPressed: () {
                   Navigator.push(context,
@@ -142,7 +139,6 @@ class _RecentsScreenState extends State<RecentsScreen> {
                 color: Colors.blueGrey,
               ),
             ),
-          ),
         ],
       ),
       bottomNavigationBar: Row(
