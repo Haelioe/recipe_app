@@ -45,7 +45,7 @@ class _HoneyChickenState extends State<HoneyChicken> {
             children: <Widget>[
               SizedBox(height: 250),
               Container(
-                height: 950,
+                height: 1000,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
@@ -54,6 +54,27 @@ class _HoneyChickenState extends State<HoneyChicken> {
                     color: Colors.white),
                 child: Column(
                   children: <Widget>[
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Icon(
+                            Icons.star,
+                            size: 30,
+                            color: Colors.amber,
+                          ),
+                          Icon(
+                            Icons.arrow_drop_up,
+                            size: 40,
+                          ),
+                          Icon(Icons.share),
+                        ],
+                      ),
+                    ),
                     SizedBox(
                       height: 30,
                     ),
@@ -240,7 +261,9 @@ class _HoneyChickenState extends State<HoneyChicken> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -256,7 +279,9 @@ class _HoneyChickenState extends State<HoneyChicken> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -272,7 +297,9 @@ class _HoneyChickenState extends State<HoneyChicken> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -286,12 +313,14 @@ class _HoneyChickenState extends State<HoneyChicken> {
                                 color: Colors.grey[700],
                               ),
                             ),
-                            width: MediaQuery.of(context).size.width-40,
+                            width: MediaQuery.of(context).size.width - 40,
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -305,12 +334,14 @@ class _HoneyChickenState extends State<HoneyChicken> {
                                 color: Colors.grey[700],
                               ),
                             ),
-                            width: MediaQuery.of(context).size.width-40,
+                            width: MediaQuery.of(context).size.width - 40,
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -326,7 +357,9 @@ class _HoneyChickenState extends State<HoneyChicken> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -340,12 +373,14 @@ class _HoneyChickenState extends State<HoneyChicken> {
                                 color: Colors.grey[700],
                               ),
                             ),
-                            width: MediaQuery.of(context).size.width-40,
+                            width: MediaQuery.of(context).size.width - 40,
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -359,12 +394,14 @@ class _HoneyChickenState extends State<HoneyChicken> {
                                 color: Colors.grey[700],
                               ),
                             ),
-                            width: MediaQuery.of(context).size.width-40,
+                            width: MediaQuery.of(context).size.width - 40,
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -378,12 +415,14 @@ class _HoneyChickenState extends State<HoneyChicken> {
                                 color: Colors.grey[700],
                               ),
                             ),
-                            width: MediaQuery.of(context).size.width-40,
+                            width: MediaQuery.of(context).size.width - 40,
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
                       child: Row(
@@ -397,12 +436,14 @@ class _HoneyChickenState extends State<HoneyChicken> {
                                 color: Colors.grey[700],
                               ),
                             ),
-                            width: MediaQuery.of(context).size.width-40,
+                            width: MediaQuery.of(context).size.width - 40,
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                   ],
                 ),
               ),
