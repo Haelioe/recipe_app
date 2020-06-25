@@ -16,15 +16,11 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      appBar: AppBar(title:Text("Favorites"),
+      appBar: AppBar(
+        title: Text("Favorites"),
         automaticallyImplyLeading: false,
-
       ),
-
-
       backgroundColor: Colors.white,
-
       body: Center(
         child: Column(
           children: [
@@ -35,155 +31,134 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
-
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => ChickenStrogScreen()));
-                    },
-
-                  child: Container(
-
-
-
-                    child: Text('1) Chicken Stroganoff'),
-
-
-
-                  ),
-                  ),
-
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => ChickenStrogScreen()));
-                    },
-                  child: Container(
-
-                    height: 200.0,
-                    width:300.0,
-                    margin: EdgeInsets.symmetric(vertical: 10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                    child: Image.asset('assets/chicken.jpg', fit: BoxFit.cover,),
-
-
-                  ),
-                  ),
-
-
-                  SizedBox(height: 40.0),
-
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => ChickenCutlet()));
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => ChickenStrogScreen()));
                     },
                     child: Container(
-
+                      child: Text('1) Chicken Stroganoff'),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => ChickenStrogScreen()));
+                    },
+                    child: Container(
+                      height: 200.0,
+                      width: 300.0,
+                      margin: EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      child: Image.asset(
+                        'assets/chicken.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 40.0),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => ChickenCutlet()));
+                    },
+                    child: Container(
                       child: Text('2) Chicken Parmesan Cutlets'),
-
-
                     ),
                   ),
                   GestureDetector(
-
                     onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => ChickenCutlet()));
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => ChickenCutlet()));
                     },
                     child: Container(
-
                       height: 200.0,
-                      width:300.0,
+                      width: 300.0,
                       margin: EdgeInsets.symmetric(vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
-                      child: Image.asset('assets/cutlet.jpg', fit: BoxFit.cover,),
-
-
+                      child: Image.asset(
+                        'assets/cutlet.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-
-
                   SizedBox(height: 40.0),
-
                   GestureDetector(
-
                     onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => BalsamicChicken()));
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => BalsamicChicken()));
                     },
                     child: Container(
-
                       child: Text('3) Balsamic Glazed Chicken'),
-
-
                     ),
                   ),
-
                   GestureDetector(
-
                     onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => BalsamicChicken()));
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => BalsamicChicken()));
                     },
                     child: Container(
-
                       height: 200.0,
-                      width:300.0,
+                      width: 300.0,
                       margin: EdgeInsets.symmetric(vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
-                      child: Image.asset('assets/glazed.jpg', fit: BoxFit.cover,),
-
-
+                      child: Image.asset(
+                        'assets/glazed.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-
-
                   SizedBox(height: 40.0),
-
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => HoneyChicken()));
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => HoneyChicken()));
                     },
                     child: Container(
-
                       child: Text('4) Honey Garlic Chicken'),
-
-
                     ),
                   ),
                   GestureDetector(
-
                     onTap: () {
-                      Navigator.push(context,
-                          new MaterialPageRoute(builder: (_) => HoneyChicken()));
+                      Navigator.push(
+                          context,
+                          new MaterialPageRoute(
+                              builder: (_) => HoneyChicken()));
                     },
                     child: Container(
-
                       height: 200.0,
-                      width:300.0,
+                      width: 300.0,
                       margin: EdgeInsets.symmetric(vertical: 10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
-                      child: Image.asset('assets/honey.jpg', fit: BoxFit.cover,),
-
-
+                      child: Image.asset(
+                        'assets/honey.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
-
-
                   SizedBox(height: 40.0),
-
-
-
                 ],
               ),
             ),
@@ -195,15 +170,12 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         children: <Widget>[
           GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  new MaterialPageRoute(builder: (_) => HomeScreen()));
+              Navigator.push(
+                  context, new MaterialPageRoute(builder: (_) => HomeScreen()));
             },
             child: Container(
               height: 60,
-              width: MediaQuery
-                  .of(context)
-                  .size
-                  .width / 3,
+              width: MediaQuery.of(context).size.width / 3,
               decoration: BoxDecoration(
                 color: Colors.blue[100],
               ),
@@ -216,10 +188,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
           ),
           Container(
             height: 60,
-            width: MediaQuery
-                .of(context)
-                .size
-                .width / 3,
+            width: MediaQuery.of(context).size.width / 3,
             decoration: BoxDecoration(
               color: Colors.blue[100],
             ),
@@ -236,10 +205,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
             },
             child: Container(
               height: 60,
-              width: MediaQuery
-                  .of(context)
-                  .size
-                  .width / 3,
+              width: MediaQuery.of(context).size.width / 3,
               decoration: BoxDecoration(
                 color: Colors.blue[100],
               ),

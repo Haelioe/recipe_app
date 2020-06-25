@@ -13,12 +13,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-
-      appBar: AppBar(title:Text("Home"),
+      appBar: AppBar(
+        title: Text("Home"),
         automaticallyImplyLeading: false,
-
       ),
-
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[],
@@ -26,17 +24,17 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Row(
         children: <Widget>[
           Container(
-              height: 60,
-              width: MediaQuery.of(context).size.width / 3,
-              decoration: BoxDecoration(
-                color: Colors.blue[100],
-              ),
-              child: Icon(
-                Icons.home,
-                color: Colors.blue[800],
-                size: 40,
-              ),
+            height: 60,
+            width: MediaQuery.of(context).size.width / 3,
+            decoration: BoxDecoration(
+              color: Colors.blue[100],
             ),
+            child: Icon(
+              Icons.home,
+              color: Colors.blue[800],
+              size: 40,
+            ),
+          ),
           GestureDetector(
             onTap: () {
               Navigator.push(context,

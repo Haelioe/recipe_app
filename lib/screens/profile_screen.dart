@@ -13,12 +13,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      appBar: AppBar(title:Text("Profile"),
+      appBar: AppBar(
+        title: Text("Profile"),
         automaticallyImplyLeading: false,
-
       ),
-
       backgroundColor: Colors.white,
       body: Container(
         color: Colors.amber[25],
@@ -197,10 +195,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   'Log Out',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white
-                  ),
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ),
             ),

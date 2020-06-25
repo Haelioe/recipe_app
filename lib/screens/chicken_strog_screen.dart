@@ -9,11 +9,17 @@ class _ChickenStrogScreenState extends State<ChickenStrogScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text("Chicken Stroganoff"),
-        automaticallyImplyLeading: false,
-
+      appBar: AppBar(
+        title: Text("Chicken Stroganoff"),
+        automaticallyImplyLeading: true,
       ),
+      body: Stack(
+        children: <Widget>[
+          Container(
 
+          )
+        ],
+      ),
     );
   }
 }
