@@ -47,6 +47,7 @@ flutter:
     - assets/glazed.jpg
     - assets/honey.jpg
     - assets/logo.png
+    - assets/searchbar.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
