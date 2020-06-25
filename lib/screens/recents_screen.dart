@@ -39,10 +39,10 @@ class _RecentsScreenState extends State<RecentsScreen> {
                         Navigator.push(
                             context,
                             new MaterialPageRoute(
-                                builder: (_) => ChickenStrogScreen()));
+                                builder: (_) => HoneyChicken()));
                       },
                       child: Container(
-                        child: Text(' Chicken Stroganoff'),
+                        child: Text('Honey Garlic Chicken'),
                       ),
                     ),
                     GestureDetector(
@@ -50,7 +50,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
                         Navigator.push(
                             context,
                             new MaterialPageRoute(
-                                builder: (_) => ChickenStrogScreen()));
+                                builder: (_) => HoneyChicken()));
                       },
                       child: Container(
                         height: 200.0,
@@ -60,7 +60,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
                           borderRadius: BorderRadius.circular(30.0),
                         ),
                         child: Image.asset(
-                          'assets/chicken.jpg',
+                          'assets/honey.jpg',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -135,10 +135,10 @@ class _RecentsScreenState extends State<RecentsScreen> {
                         Navigator.push(
                             context,
                             new MaterialPageRoute(
-                                builder: (_) => HoneyChicken()));
+                                builder: (_) => ChickenStrogScreen()));
                       },
                       child: Container(
-                        child: Text(' Honey Garlic Chicken'),
+                        child: Text(' Chicken Stroganoff'),
                       ),
                     ),
                     GestureDetector(
@@ -146,7 +146,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
                         Navigator.push(
                             context,
                             new MaterialPageRoute(
-                                builder: (_) => HoneyChicken()));
+                                builder: (_) => ChickenStrogScreen()));
                       },
                       child: Container(
                         height: 200.0,
@@ -156,7 +156,7 @@ class _RecentsScreenState extends State<RecentsScreen> {
                           borderRadius: BorderRadius.circular(30.0),
                         ),
                         child: Image.asset(
-                          'assets/honey.jpg',
+                          'assets/chicken.jpg',
                           fit: BoxFit.cover,
                         ),
                       ),
